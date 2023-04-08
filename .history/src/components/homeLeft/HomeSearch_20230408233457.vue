@@ -6,7 +6,7 @@
         -->
     <div class="demo-input-size">
       <el-input
-        style="width: 200px"
+        style="width: 220px"
         v-model="input1"
         class="w-50 m-2"
         size="large"
@@ -20,7 +20,6 @@
         -->
     <div class="demo-date-picker">
       <el-date-picker
-        style="width: 200px"
         id="el-date-picker"
         v-model="value"
         type="date"
@@ -50,7 +49,7 @@
         closable
         :disable-transitions="false"
         @close="handleClose(tag)"
-        style="margin-right: 10px; margin-top: 10px; cursor: pointer"
+        style="margin-right: 10px; margin-top: 10px;cursor: text;"
       >
         {{ tag }}
       </el-tag>
@@ -157,7 +156,7 @@ export default defineComponent({
 <style scoped>
 .home-search {
   position: fixed;
-  width: 16.6%;
+  width: 100;
   overflow: hidden;
 }
 
@@ -165,7 +164,7 @@ export default defineComponent({
 .demo-date-picker,
 .demo-tag-picker {
   position: relative;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 /* 日期选择框样式 */
 .demo-date-picker {
@@ -174,7 +173,7 @@ export default defineComponent({
 /* 标签选择框样式 */
 .demo-tag-picker,
 .demo-tag-picker-search {
-  padding-left: 10px;
+  padding-left: 15px;
   margin: 15px 0px 15px 0;
 }
 

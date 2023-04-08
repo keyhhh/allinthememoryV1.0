@@ -174,7 +174,7 @@ export default defineComponent({
 /* 标签选择框样式 */
 .demo-tag-picker,
 .demo-tag-picker-search {
-  padding-left: 10px;
+  padding-left: 15px;
   margin: 15px 0px 15px 0;
 }
 

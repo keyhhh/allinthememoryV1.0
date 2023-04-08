@@ -20,7 +20,6 @@
         -->
     <div class="demo-date-picker">
       <el-date-picker
-        style="width: 200px"
         id="el-date-picker"
         v-model="value"
         type="date"
@@ -50,7 +49,7 @@
         closable
         :disable-transitions="false"
         @close="handleClose(tag)"
-        style="margin-right: 10px; margin-top: 10px; cursor: pointer"
+        style="margin-right: 10px; margin-top: 10px;cursor: pointer;"
       >
         {{ tag }}
       </el-tag>
@@ -174,7 +173,7 @@ export default defineComponent({
 /* 标签选择框样式 */
 .demo-tag-picker,
 .demo-tag-picker-search {
-  padding-left: 10px;
+  padding-left: 15px;
   margin: 15px 0px 15px 0;
 }
 
