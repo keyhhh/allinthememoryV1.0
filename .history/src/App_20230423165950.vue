@@ -1,0 +1,36 @@
+<template>
+  <div>
+    <router-view />
+    
+  </div>
+</template>
+
+<script>
+import { test } from "@/axios/home";
+
+import { reactive } from "vue";
+
+export default {
+  setup() {
+    const result = reactive();
+
+    test().then((res) => {
+      this.result = res
+    });
+
+    return { result };
+  },
+  mounted() {
+    test().then((res) => {
+      console.log("@@@@@@@@@res.data.data=", res.data.data);
+      console.log("@@@@@@@@@res.data=", res.data);
+      console.log("@@@@@@@@@res=", res);
+    });
+  },
+};
+</script>
+
+
+
+<style>
+</style>
