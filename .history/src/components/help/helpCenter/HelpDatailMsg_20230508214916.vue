@@ -1,0 +1,40 @@
+<template>
+  <div class="help-detail-div">
+    <div class="help-detail-header"></div>
+    <h1>这里放发布人头像，内容标签，发布时间等信息</h1>
+
+  </div>
+</template>
+
+<script>
+import { useRoute, useRouter } from "vue-router";
+
+export default {
+  setup() {
+    const route = useRoute();
+    const router = useRouter();
+    const helpDetailName = route.query.helpDetailMsgId;
+
+    return { helpDetailName, router };
+  },
+};
+</script>
+
+<style>
+/* 走马灯图片的上边的文字的css */
+.el-carousel__item h3 {
+  color: #475669;
+  opacity: 0.75;
+  line-height: 500px;
+  margin: 0;
+  text-align: center;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+}
+</style>
